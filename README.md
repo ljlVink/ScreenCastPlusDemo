@@ -1,3 +1,12 @@
+  
+# ScreenCastPlusDemo
+
+华为cast+ engine能力，程序sdk因为某些原因暂不公开 有需要可以issue我
+
+本项目修改自例程
+
+下面是官方的说明 请注意`license`
+
 Cast Engine Demo
 ==============================
 
@@ -23,9 +32,6 @@ Compile the APK and run the demo.
 
 Result
 -----------
-<img src="app/src/cast.png" height="462" width="847"/>
-
-
 
 
 License

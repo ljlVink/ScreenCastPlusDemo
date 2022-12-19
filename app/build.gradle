@@ -3,14 +3,13 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.huawei.sinktester"
+        applicationId "com.ljlvink.ScreenCastPlusDemo"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 100205
         versionName "1.0.0.205"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
-        generatedDensities = []
 
     }
     aaptOptions {
@@ -23,23 +22,13 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
             minifyEnabled false
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            if (variant.buildType.name == "debug") {
-                output.outputFileName = "Sink_demo_test_" + versionName + ".apk"
-            } else if (variant.buildType.name == "release") {
-                output.outputFileName = "Sink_demo_test_" + versionName + ".apk"
-            }
         }
     }
 }
