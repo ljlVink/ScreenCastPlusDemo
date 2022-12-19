@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradation"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_icon_cast_engine" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/wireless_projection"
+        android:textColor="@color/colorTextColorWhite"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/introduct_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/introduce_content"
+        android:textColor="@color/colorTextColorWhite"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title"/>
+
+
+    <android.support.constraint.Guideline
+        app:layout_constraintGuide_percent="0.33"
+        android:id="@+id/hor_line"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <android.support.constraint.Guideline
+        app:layout_constraintGuide_percent="0.33"
+        android:id="@+id/ver_line1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Guideline
+        app:layout_constraintGuide_percent="0.66"
+        android:id="@+id/ver_line2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Guideline
+        app:layout_constraintGuide_begin="50dp"
+        android:id="@+id/ver_line3"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Guideline
+        app:layout_constraintGuide_end="30dp"
+        android:id="@+id/hor_line2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+     <com.huawei.sinktester.SwitchLayout
+         app:mode="sw"
+         app:mytext="@string/wireless_projection"
+         android:id="@+id/main_switch_layout"
+         android:layout_width="0dp"
+         android:clickable="true"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:background="@drawable/select_background"
+         android:layout_height="wrap_content"
+         app:layout_constraintStart_toStartOf="@+id/ver_line3"
+         app:layout_constraintTop_toBottomOf="@id/hor_line"
+         app:layout_constraintEnd_toEndOf="@id/ver_line1"/>
+
+    <com.huawei.sinktester.SwitchLayout
+        app:mode="sw"
+        app:mytext="@string/encrypted_access"
+        android:id="@+id/encryption_switch_layout"
+        android:layout_width="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/select_background"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/ver_line3"
+        app:layout_constraintTop_toBottomOf="@id/main_switch_layout"
+        app:layout_constraintEnd_toEndOf="@id/ver_line1"/>
+
+    <com.huawei.sinktester.SwitchLayout
+        app:mode="pwd"
+        app:mytext="@string/password"
+        android:id="@+id/password_layout"
+        android:layout_width="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/select_background"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/encryption_switch_layout"
+        app:layout_constraintStart_toStartOf="@+id/ver_line3"
+        app:layout_constraintEnd_toEndOf="@id/ver_line1"/>
+
+
+
+    <TextView
+        android:gravity="start|center_vertical"
+        android:id="@+id/wifi_name_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:textColor="@color/colorTextColorWhite"
+        app:layout_constraintStart_toStartOf="@+id/ver_line3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/hor_line2"/>
+
+    <TextView
+        android:gravity="start|center_vertical"
+        android:id="@+id/tv_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:textColor="@color/colorTextColorWhite"
+        app:layout_constraintStart_toStartOf="@+id/ver_line3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/wifi_name_textview"/>
+
+    <TextView
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/text_des_step1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:gravity="center"
+        android:textColor="@color/colorTextColorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/hor_line2"
+        app:layout_constraintStart_toStartOf="@+id/ver_line1"
+        app:layout_constraintEnd_toEndOf="@id/ver_line2"
+        android:text="@string/step1_description"/>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="@+id/ver_line1"
+        app:layout_constraintEnd_toEndOf="@id/ver_line2"
+        app:layout_constraintBottom_toTopOf="@+id/text_des_step1"
+        android:id="@+id/text_step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Step1"/>
+
+    <TextView
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/text_des_step2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:gravity="center"
+        android:textColor="@color/colorTextColorWhite"
+        app:layout_constraintStart_toStartOf="@id/ver_line2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/hor_line2"
+        android:text="@string/step2_description"/>
+
+    <TextView
+        android:id="@+id/text_step2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintBaseline_toBaselineOf="@id/text_step1"
+        app:layout_constraintStart_toStartOf="@id/ver_line2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Step2"/>
+
+
+    <ImageView
+        android:id="@+id/img_step1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_step1"
+        app:layout_constraintTop_toBottomOf="@+id/introduct_textview"
+        app:layout_constraintStart_toStartOf="@+id/ver_line1"
+        app:layout_constraintEnd_toEndOf="@+id/ver_line2"
+        android:src="@drawable/cast_picture1"/>
+
+    <ImageView
+        android:id="@+id/img_step2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/img_step1"
+        app:layout_constraintBottom_toBottomOf="@+id/img_step1"
+        app:layout_constraintStart_toStartOf="@+id/ver_line2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/cast_picture2"/>
+
+
+</android.support.constraint.ConstraintLayout>

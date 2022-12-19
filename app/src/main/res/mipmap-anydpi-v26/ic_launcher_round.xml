@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@android:color/background_light" />
+    <foreground android:drawable="@drawable/ic_cast_logo" />
+
+</adaptive-icon>

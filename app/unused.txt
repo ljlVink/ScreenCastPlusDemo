@@ -1,0 +1,457 @@
+com.huawei.profile.service.e$a$a
+androidx.versionedparcelable.ParcelUtils
+com.huawei.hisight.b.c
+    static synthetic com.huawei.softnet.connect.DataCallback b(com.huawei.hisight.b.c)
+    static synthetic android.content.Context c(com.huawei.hisight.b.c)
+android.arch.lifecycle.Transformations$2$1
+com.huawei.hisight.b.c$4
+    public int onByteReceive(java.lang.String,java.lang.String,byte[],int,java.lang.String)
+    public int onBlockReceive(java.lang.String,java.lang.String,byte[],int,java.lang.String)
+    public int onFileReceive(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    public int onStreamReceive(java.lang.String,java.lang.String,com.huawei.softnet.connect.DataPayload,java.lang.String)
+    public int onSendFileStateUpdate(java.lang.String,java.lang.String,int,java.lang.String)
+    public java.lang.String onCommonUpdate(java.lang.String)
+com.huawei.sinktester.R$id
+androidx.versionedparcelable.VersionedParcelParcel
+    public void writeByteArray(byte[],int,int)
+    public void writeLong(long)
+    public void writeFloat(float)
+    public void writeDouble(double)
+    public void writeStrongBinder(android.os.IBinder)
+    public void writeBoolean(boolean)
+    public void writeStrongInterface(android.os.IInterface)
+    public void writeBundle(android.os.Bundle)
+    public long readLong()
+    public float readFloat()
+    public double readDouble()
+    public android.os.IBinder readStrongBinder()
+    public android.os.Bundle readBundle()
+    public boolean readBoolean()
+    private static final boolean DEBUG
+    private static final java.lang.String TAG
+com.huawei.hwddmp.servicebus.e$a$a
+com.huawei.sinktester.SinkTesterService
+    private void startPinActivity(java.lang.String,java.lang.String)
+    private static final java.lang.String TAG
+    public static final java.lang.String BROADCAST_ACTION_DISCONNECT
+    public static final java.lang.String BROADCAST_ACTION_SET_DISCOVERABLE
+    public static final java.lang.String BROADCAST_ACTION_SET_AUTH_MODE
+    public static final java.lang.String BROADCAST_ACTION_REJECT_CONNECTION
+    public static final java.lang.String BROADCAST_ACTION_ALLOW_CONNECTION_ALWAYS
+    public static final java.lang.String BROADCAST_ACTION_ALLOW_CONNECTION_ONCE
+    public static final java.lang.String BROADCAST_ACTION_PLAY
+    public static final java.lang.String BROADCAST_ACTION_PAUSE
+    public static final java.lang.String BROADCAST_ACTION_FINISH_PIN_ACTIVITY
+    public static final java.lang.String BROADCAST_ACTION_FINISH_PLAY_ACTIVITY
+    public static final java.lang.String BROADCAST_ACTION_NETWORK_QUALITY
+    private static final int OPTIMIZATION_TAG_CODEC_CONFIGURE_FLAG
+    private static final int OPTIMIZATION_TAG_MEDIA_FORMAT_INTEGER
+    private static final int OPTIMIZATION_TAG_MEDIA_FORMAT_FLOAT
+    private static final int OPTIMIZATION_TAG_MEDIA_FORMAT_LONG
+    private static final int OPTIMIZATION_TAG_MEDIA_FORMAT_STRING
+com.huawei.sinktester.PinActivity
+    private static final java.lang.String TAG
+com.huawei.hwddmp.discover.b$a
+com.huawei.sinktester.SinkTesterService$MyBinder
+    public com.huawei.sinktester.SinkTesterService getService()
+com.huawei.sinktester.Utils
+    public void <init>()
+android.arch.lifecycle.livedata.R
+com.huawei.connection.R$styleable
+com.huawei.sinktester.BuildConfig
+com.huawei.hwddmp.sdkdfx.ReportSdkEvent$ReportType
+    public int a()
+com.huawei.sinktester.SharedPreferenceUtil
+    public void <init>()
+    public static final java.lang.String PREF_FILE
+    public static final java.lang.String PREF_KEY_DISCOVERABLE
+    public static final java.lang.String PREF_KEY_AUTH_MODE
+    public static final java.lang.String PREF_KEY_PASSWORD
+    private static final java.lang.String TAG
+android.arch.lifecycle.MediatorLiveData$Source
+com.huawei.hwddmp.sdkdfx.ReportSdkEvent
+    public com.huawei.android.app.HiEventEx toHiEvent()
+com.huawei.connection.R$layout
+android.arch.lifecycle.ViewModelProvider
+    public void <init>(android.arch.lifecycle.ViewModelStoreOwner,android.arch.lifecycle.ViewModelProvider$Factory)
+    private static final java.lang.String DEFAULT_KEY
+com.huawei.hwddmp.servicebus.e
+com.huawei.hwddmp.discover.c$a$a
+android.arch.lifecycle.Transformations
+com.huawei.connection.R
+com.huawei.sinktester.Manifest
+com.huawei.connection.R$string
+com.huawei.profile.service.a
+    public abstract void a(com.huawei.profile.profile.Result,java.util.List)
+android.arch.lifecycle.ViewModelProvider$NewInstanceFactory
+com.huawei.sinktester.R$color
+android.arch.lifecycle.ViewModelProvider$AndroidViewModelFactory
+android.arch.lifecycle.ComputableLiveData$3
+com.huawei.connection.R$bool
+com.huawei.hwddmp.servicebus.c$a$a
+com.huawei.hwddmp.servicebus.d$a
+android.arch.lifecycle.R
+com.huawei.profile.service.b$a$a
+com.huawei.profile.service.c$a$a
+    public int a(java.lang.String,boolean)
+com.huawei.profile.service.d$a
+    public static com.huawei.profile.service.d a(android.os.IBinder)
+androidx.core.internal.package-info
+com.huawei.hwddmp.servicebus.g$a$a
+com.huawei.profile.service.b$a
+com.huawei.hwddmp.d.b$a$a
+com.huawei.sinktester.R$dimen
+com.huawei.sinktester.AlertActivity
+    private static final java.lang.String TAG
+com.huawei.hwddmp.d.c$a$a
+    public void b(com.huawei.hwddmp.d.b)
+    public com.huawei.hwddmp.deviceinfo.DeviceInfoExternalList a()
+    public com.huawei.hwddmp.deviceinfo.PeripheralList a(java.lang.String)
+    public void a(java.lang.String,int)
+    public void c()
+    public void d()
+    public void a(boolean)
+    public void b(boolean)
+    public void d(com.huawei.hwddmp.d.b)
+    public int b(java.lang.String)
+    public void a(java.lang.String,boolean)
+    public boolean c(java.lang.String)
+    public void a(int,long)
+    public java.lang.String d(java.lang.String)
+    public java.lang.String e(java.lang.String)
+    public int b(java.lang.String,boolean)
+    public com.huawei.hwddmp.deviceinfo.DeviceInfoExternalList e()
+    public java.lang.String f(java.lang.String)
+    public com.huawei.hwddmp.deviceinfo.BasicInfo f()
+    public com.huawei.hwddmp.deviceinfo.BasicInfo g(java.lang.String)
+    public java.util.List g()
+    public java.lang.String h(java.lang.String)
+    public java.util.List a(int)
+    public java.lang.String a(java.lang.String,java.lang.String)
+    public void a(java.lang.String,int,com.huawei.hwddmp.discover.DeviceInfo,com.huawei.hwddmp.d.a)
+    public void a(java.lang.String,int,java.lang.String,com.huawei.hwddmp.d.a)
+    public void a(java.lang.String,com.huawei.hwddmp.discover.ConnectInfo)
+    public void a(java.lang.String,int,com.huawei.hwddmp.discover.ConnectInfo)
+    public void a(java.lang.String,int,java.lang.String)
+    public void b(int,long)
+com.huawei.sinktester.R$styleable
+    public void <init>()
+com.huawei.hwddmp.servicebus.f$a
+    public boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+com.huawei.sinktester.R
+com.huawei.hwddmp.d.a$a$a
+com.huawei.hwddmp.d.a$a
+com.huawei.connection.R$integer
+android.arch.lifecycle.ComputableLiveData
+androidx.versionedparcelable.R
+com.huawei.sinktester.R$attr
+com.huawei.hwddmp.discover.b$a$a
+com.huawei.hwddmp.d.a
+com.huawei.sinktester.Manifest$permission
+android.arch.core.executor.TaskExecutor
+    public void executeOnMainThread(java.lang.Runnable)
+com.huawei.sinktester.MainActivity
+    private static final java.lang.String TAG
+androidx.versionedparcelable.ParcelField
+com.huawei.connection.R$dimen
+android.arch.core.util.Function
+com.huawei.hwddmp.d.c$a
+    public boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+android.arch.lifecycle.MediatorLiveData
+com.huawei.sinktester.R$anim
+com.huawei.hisight.hisight.media.a.c
+    public void setPayloads(byte[])
+    public void setTimestamp(long)
+    public void setRtpTimestamp(long)
+com.huawei.hwddmp.discover.a$a$a
+    public int a(java.lang.String,com.huawei.hwddmp.discover.SubscribeInfo,com.huawei.hwddmp.discover.b)
+    public int b(java.lang.String,int)
+com.huawei.profile.service.e
+    public abstract void a(java.util.Map)
+com.huawei.hwddmp.servicebus.f
+    public abstract int a(java.lang.String,com.huawei.hwddmp.servicebus.g)
+    public abstract int b(java.lang.String,com.huawei.hwddmp.servicebus.g)
+    public abstract com.huawei.hwddmp.servicebus.TcpSession a(java.lang.String,java.lang.String,java.lang.String)
+    public abstract com.huawei.hwddmp.servicebus.TcpSession a(com.huawei.hwddmp.servicebus.g,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)
+    public abstract int a(com.huawei.hwddmp.servicebus.d)
+    public abstract int b(com.huawei.hwddmp.servicebus.d)
+    public abstract int a(java.lang.String,int,byte[])
+    public abstract int a(com.huawei.hwddmp.servicebus.g,java.lang.String,java.lang.String,int)
+    public abstract int a(java.lang.String,boolean)
+    public abstract java.util.List a(java.lang.String)
+    public abstract java.lang.String b(java.lang.String)
+    public abstract int a(java.lang.String,com.huawei.hwddmp.servicebus.c)
+    public abstract int c(java.lang.String)
+    public abstract long b(java.lang.String,java.lang.String,java.lang.String)
+    public abstract int b(java.lang.String,long,byte[])
+    public abstract int a(java.lang.String,java.lang.String,com.huawei.hwddmp.servicebus.e)
+    public abstract long a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    public abstract java.lang.String a()
+    public abstract java.lang.String d(java.lang.String)
+    public abstract long a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)
+    public abstract int a(long)
+    public abstract int a(long,com.huawei.hwddmp.servicebus.StubMessage)
+    public abstract int a(com.huawei.hwddmp.servicebus.FileChannel)
+    public abstract long a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.huawei.hwddmp.servicebus.SessionAttribute)
+    public abstract int a(java.lang.String,java.lang.String,int)
+com.huawei.sinktester.R$drawable
+com.huawei.connection.R$color
+com.huawei.sinktester.PasswordActivity
+    private static final java.lang.String TAG
+com.huawei.hwddmp.discover.a
+    public abstract int a(java.lang.String,com.huawei.hwddmp.discover.SubscribeInfo,com.huawei.hwddmp.discover.b)
+    public abstract int b(java.lang.String,int)
+com.huawei.hwddmp.discover.c$a
+    public static com.huawei.hwddmp.discover.c a(android.os.IBinder)
+com.huawei.sinktester.R$animator
+com.huawei.profile.service.b
+    public abstract void a(com.huawei.profile.profile.Result,java.util.List)
+android.arch.lifecycle.ComputableLiveData$2
+android.arch.lifecycle.AndroidViewModel
+    public void <init>(android.app.Application)
+    public android.app.Application getApplication()
+    private android.app.Application mApplication
+com.huawei.hwddmp.discover.a$a
+    public boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+com.huawei.sinktester.R$style
+android.arch.lifecycle.Transformations$2
+com.huawei.hwddmp.servicebus.f$a$a
+    public int a(java.lang.String,com.huawei.hwddmp.servicebus.g)
+    public int b(java.lang.String,com.huawei.hwddmp.servicebus.g)
+    public com.huawei.hwddmp.servicebus.TcpSession a(java.lang.String,java.lang.String,java.lang.String)
+    public com.huawei.hwddmp.servicebus.TcpSession a(com.huawei.hwddmp.servicebus.g,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)
+    public int a(com.huawei.hwddmp.servicebus.d)
+    public int b(com.huawei.hwddmp.servicebus.d)
+    public int a(java.lang.String,int,byte[])
+    public int a(com.huawei.hwddmp.servicebus.g,java.lang.String,java.lang.String,int)
+    public int a(java.lang.String,boolean)
+    public java.util.List a(java.lang.String)
+    public java.lang.String b(java.lang.String)
+    public int a(java.lang.String,com.huawei.hwddmp.servicebus.c)
+    public int c(java.lang.String)
+    public long b(java.lang.String,java.lang.String,java.lang.String)
+    public int b(java.lang.String,long,byte[])
+    public int a(java.lang.String,java.lang.String,com.huawei.hwddmp.servicebus.e)
+    public long a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    public java.lang.String a()
+    public java.lang.String d(java.lang.String)
+    public long a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)
+    public int a(long)
+    public int a(long,com.huawei.hwddmp.servicebus.StubMessage)
+    public int a(com.huawei.hwddmp.servicebus.FileChannel)
+    public long a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.huawei.hwddmp.servicebus.SessionAttribute)
+    public int a(java.lang.String,java.lang.String,int)
+com.huawei.connection.R$anim
+android.arch.lifecycle.Lifecycling
+    public void <init>()
+    private static final int REFLECTIVE_CALLBACK
+    private static final int GENERATED_CALLBACK
+androidx.versionedparcelable.VersionedParcel$ParcelException
+com.huawei.sinktester.R$string
+com.huawei.profile.service.a$a$a
+androidx.versionedparcelable.VersionedParcelStream
+com.huawei.hwddmp.servicebus.g$a
+com.huawei.hwddmp.servicebus.d$a$a
+androidx.versionedparcelable.VersionedParcelStream$InputBuffer
+com.huawei.profile.service.d$a$a
+com.huawei.sinktester.R$layout
+android.arch.core.executor.ArchTaskExecutor
+    public static java.util.concurrent.Executor getMainThreadExecutor()
+    public static java.util.concurrent.Executor getIOThreadExecutor()
+    public void setDelegate(android.arch.core.executor.TaskExecutor)
+android.arch.lifecycle.ReportFragment
+    static android.arch.lifecycle.ReportFragment get(android.app.Activity)
+    void setProcessListener(android.arch.lifecycle.ReportFragment$ActivityInitializationListener)
+    private static final java.lang.String REPORT_FRAGMENT_TAG
+android.arch.lifecycle.MethodCallsLogger
+    public boolean approveCall(java.lang.String,int)
+com.huawei.hwddmp.servicebus.g
+androidx.versionedparcelable.ParcelImpl
+    public void <init>(androidx.versionedparcelable.VersionedParcelable)
+    public androidx.versionedparcelable.VersionedParcelable getVersionedParcel()
+androidx.versionedparcelable.VersionedParcelStream$FieldBuffer
+android.arch.lifecycle.LifecycleRegistry
+    public int getObserverCount()
+    private static final java.lang.String LOG_TAG
+com.huawei.connection.nearby.e$a$a
+    public boolean a(java.lang.String,com.huawei.connection.nearby.ServiceInfo,com.huawei.connection.nearby.a)
+    public boolean b(java.lang.String)
+    public int a(java.lang.String,java.lang.String,int,java.lang.String)
+    public int b(java.lang.String,java.lang.String,int,java.lang.String)
+    public java.lang.String a()
+    public int b()
+android.arch.lifecycle.viewmodel.R
+android.arch.lifecycle.ComputableLiveData$1
+com.huawei.hwddmp.sdkdfx.ReportSdkEvent$1
+com.huawei.hwddmp.servicebus.c$a
+    public static com.huawei.hwddmp.servicebus.c a(android.os.IBinder)
+android.arch.lifecycle.livedata.core.R
+com.huawei.hwddmp.sdkdfx.ReportSdkEvent$ReportItemKey
+com.huawei.sinktester.R$bool
+com.huawei.sinktester.PlayActivity
+    private static final java.lang.String TAG
+    private static final int INVALID_NETWORK_QUALITY
+androidx.versionedparcelable.VersionedParcel$1
+android.arch.lifecycle.Transformations$1
+com.huawei.hwddmp.discover.b
+androidx.versionedparcelable.NonParcelField
+com.huawei.profile.service.c
+    public abstract int a(java.lang.String,boolean)
+com.huawei.profile.R
+com.huawei.connection.R$drawable
+android.arch.core.R
+com.huawei.sinktester.SeparatedEditText
+    public void clearText()
+com.huawei.profile.service.a$a
+com.huawei.hwddmp.servicebus.e$a
+com.huawei.connection.R$style
+com.huawei.profile.service.c$a
+    public boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+com.huawei.hisight.b.c$3
+    public void onConnectionInit(java.lang.String,java.lang.String,java.lang.String)
+    public void onConnectionStateUpdate(java.lang.String,java.lang.String,int,java.lang.String)
+com.huawei.hwddmp.servicebus.d
+androidx.versionedparcelable.VersionedParcelize
+com.huawei.connection.R$attr
+com.huawei.sinktester.R$integer
+com.huawei.profile.service.e$a
+android.arch.lifecycle.ClassesInfoCache
+    private static final int CALL_TYPE_NO_ARG
+    private static final int CALL_TYPE_PROVIDER
+    private static final int CALL_TYPE_PROVIDER_WITH_EVENT
+com.huawei.hwddmp.d.c
+    public abstract void b(com.huawei.hwddmp.d.b)
+    public abstract com.huawei.hwddmp.deviceinfo.DeviceInfoExternalList a()
+    public abstract com.huawei.hwddmp.deviceinfo.PeripheralList a(java.lang.String)
+    public abstract void a(java.lang.String,int)
+    public abstract void c()
+    public abstract void d()
+    public abstract void a(boolean)
+    public abstract void b(boolean)
+    public abstract void d(com.huawei.hwddmp.d.b)
+    public abstract int b(java.lang.String)
+    public abstract void a(java.lang.String,boolean)
+    public abstract boolean c(java.lang.String)
+    public abstract void a(int,long)
+    public abstract java.lang.String d(java.lang.String)
+    public abstract java.lang.String e(java.lang.String)
+    public abstract int b(java.lang.String,boolean)
+    public abstract com.huawei.hwddmp.deviceinfo.DeviceInfoExternalList e()
+    public abstract java.lang.String f(java.lang.String)
+    public abstract com.huawei.hwddmp.deviceinfo.BasicInfo f()
+    public abstract com.huawei.hwddmp.deviceinfo.BasicInfo g(java.lang.String)
+    public abstract java.util.List g()
+    public abstract java.lang.String h(java.lang.String)
+    public abstract java.util.List a(int)
+    public abstract java.lang.String a(java.lang.String,java.lang.String)
+    public abstract void a(java.lang.String,int,com.huawei.hwddmp.discover.DeviceInfo,com.huawei.hwddmp.d.a)
+    public abstract void a(java.lang.String,int,java.lang.String,com.huawei.hwddmp.d.a)
+    public abstract void a(java.lang.String,com.huawei.hwddmp.discover.ConnectInfo)
+    public abstract void a(java.lang.String,int,com.huawei.hwddmp.discover.ConnectInfo)
+    public abstract void a(java.lang.String,int,java.lang.String)
+    public abstract void b(int,long)
+com.huawei.connection.R$id
+androidx.versionedparcelable.VersionedParcel
+    private void writeCollection(java.util.Collection,int)
+    private int getType(java.lang.Object)
+    private void writeSerializable(java.io.Serializable)
+    private int readExceptionCode()
+    private java.lang.Exception readException(int,java.lang.String)
+    protected static java.lang.Throwable getRootCause(java.lang.Throwable)
+    private java.lang.Exception createException(int,java.lang.String)
+    private java.util.Collection readCollection(int,java.util.Collection)
+    protected abstract void writeByteArray(byte[],int,int)
+    protected abstract void writeLong(long)
+    protected abstract void writeFloat(float)
+    protected abstract void writeDouble(double)
+    protected abstract void writeStrongBinder(android.os.IBinder)
+    protected abstract void writeBoolean(boolean)
+    protected abstract void writeStrongInterface(android.os.IInterface)
+    protected abstract void writeBundle(android.os.Bundle)
+    protected abstract long readLong()
+    protected abstract float readFloat()
+    protected abstract double readDouble()
+    protected abstract android.os.IBinder readStrongBinder()
+    protected abstract android.os.Bundle readBundle()
+    protected abstract boolean readBoolean()
+    public void writeStrongInterface(android.os.IInterface,int)
+    public void writeBundle(android.os.Bundle,int)
+    public void writeBoolean(boolean,int)
+    public void writeByteArray(byte[],int,int,int)
+    public void writeLong(long,int)
+    public void writeFloat(float,int)
+    public void writeDouble(double,int)
+    public void writeStrongBinder(android.os.IBinder,int)
+    public boolean readBoolean(boolean,int)
+    public long readLong(long,int)
+    public float readFloat(float,int)
+    public double readDouble(double,int)
+    public android.os.IBinder readStrongBinder(android.os.IBinder,int)
+    public android.os.Bundle readBundle(android.os.Bundle,int)
+    public void writeByte(byte,int)
+    public void writeSize(android.util.Size,int)
+    public void writeSizeF(android.util.SizeF,int)
+    public void writeSparseBooleanArray(android.util.SparseBooleanArray,int)
+    public void writeBooleanArray(boolean[],int)
+    protected void writeBooleanArray(boolean[])
+    public boolean[] readBooleanArray(boolean[],int)
+    protected boolean[] readBooleanArray()
+    public void writeCharArray(char[],int)
+    public char[] readCharArray(char[],int)
+    public void writeIntArray(int[],int)
+    protected void writeIntArray(int[])
+    public int[] readIntArray(int[],int)
+    protected int[] readIntArray()
+    public void writeLongArray(long[],int)
+    protected void writeLongArray(long[])
+    public long[] readLongArray(long[],int)
+    protected long[] readLongArray()
+    public void writeFloatArray(float[],int)
+    protected void writeFloatArray(float[])
+    public float[] readFloatArray(float[],int)
+    protected float[] readFloatArray()
+    public void writeDoubleArray(double[],int)
+    protected void writeDoubleArray(double[])
+    public double[] readDoubleArray(double[],int)
+    protected double[] readDoubleArray()
+    public void writeSet(java.util.Set,int)
+    public void writeList(java.util.List,int)
+    public void writeArray(java.lang.Object[],int)
+    protected void writeArray(java.lang.Object[])
+    public void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int)
+    public void writeSerializable(java.io.Serializable,int)
+    public void writeException(java.lang.Exception,int)
+    protected void writeNoException()
+    public java.lang.Exception readException(java.lang.Exception,int)
+    public byte readByte(byte,int)
+    public android.util.Size readSize(android.util.Size,int)
+    public android.util.SizeF readSizeF(android.util.SizeF,int)
+    public android.util.SparseBooleanArray readSparseBooleanArray(android.util.SparseBooleanArray,int)
+    public java.util.Set readSet(java.util.Set,int)
+    public java.util.List readList(java.util.List,int)
+    public java.lang.Object[] readArray(java.lang.Object[],int)
+    protected java.lang.Object[] readArray(java.lang.Object[])
+    public androidx.versionedparcelable.VersionedParcelable readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int)
+    protected java.io.Serializable readSerializable()
+    private static final java.lang.String TAG
+    private static final int EX_SECURITY
+    private static final int EX_BAD_PARCELABLE
+    private static final int EX_ILLEGAL_ARGUMENT
+    private static final int EX_NULL_POINTER
+    private static final int EX_ILLEGAL_STATE
+    private static final int EX_NETWORK_MAIN_THREAD
+    private static final int EX_UNSUPPORTED_OPERATION
+    private static final int EX_PARCELABLE
+    private static final int TYPE_VERSIONED_PARCELABLE
+    private static final int TYPE_PARCELABLE
+    private static final int TYPE_SERIALIZABLE
+    private static final int TYPE_STRING
+    private static final int TYPE_BINDER
+com.huawei.hwddmp.deviceinfo.a$a$a
+    public void onDeviceVerifyPass(int,com.huawei.hwddmp.deviceinfo.VerifyInfo)
+    public void onDeviceVerifyFail(int,java.lang.String)
+com.huawei.sinktester.R$mipmap
+com.huawei.hwddmp.d.b$a
+    public static com.huawei.hwddmp.d.b a(android.os.IBinder)
+com.huawei.connection.R$mipmap
+com.huawei.hwddmp.arkmiddlesdk.R
