@@ -346,7 +346,7 @@ public class SinkTesterService extends Service {
         Log.d(TAG, "setCapability() called.");
         HiSightCapability capability = new HiSightCapability(screenSize, videoSize, screenSize, videoSize);
         capability.setVideoFps(framerate);
-
+        capability.setIsSupportRemoteCtrl(true);
         //根据平台不同在此处选用HiSightCapability提供的不同方法进行解码器优化设置。
         //Select different methods provided by HiSightCapability to optimize decoder settings based on different platforms.
 
