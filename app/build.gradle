@@ -6,8 +6,8 @@ android {
         applicationId "com.ljlvink.ScreenCastPlusDemo"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 100205
-        versionName "1.0.0.205"
+        versionCode 100300
+        versionName "1.0.0.300"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
 

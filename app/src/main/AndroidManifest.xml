@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.huawei.sinktester">
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="com.huawei.hms.kitframework.permission.BIND_ENGINE_FRAMEWORK_SERVICE"/>
-    <uses-permission android:name="com.huawei.hms.kitframework.permission.REQUEST_AUTHENTICATION"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.huawei.hms.kitframework.permission.BIND_ENGINE_FRAMEWORK_SERVICE" />
+    <uses-permission android:name="com.huawei.hms.kitframework.permission.REQUEST_AUTHENTICATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.huawei.permission.HISIGHT_ACCESS" /> <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 允许程序访问网络连接 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序获取当前WiFi接入的状态以及WLAN热点的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.huawei.permission.sec.ACCESS_UDID"/>
 
     <application
         android:allowBackup="false"
@@ -20,20 +30,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".NewUI"
+            android:exported="false" />
+        <activity
             android:name=".AlertActivity"
-            android:theme="@style/MyDialogStyle">
-
-        </activity>
+            android:theme="@style/MyDialogStyle"></activity>
         <activity android:name=".PasswordActivity" />
         <activity
             android:name=".PlayActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
-        <activity android:name=".PinActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name=".PinActivity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -42,26 +56,20 @@
             android:name=".SinkTesterService"
             android:enabled="true"
             android:exported="true" />
-        <service android:name="com.huawei.hisight.service.PlayerSinkService" android:enabled="true" android:exported="false"/>
-        <meta-data android:name="version" android:value="1"/>
-        <service android:name="com.huawei.connection.service.NearFieldManagerService" android:enabled="true" android:exported="false" android:process="com.huawei.connection"/>
+        <service
+            android:name="com.huawei.hisight.service.PlayerSinkService"
+            android:enabled="true"
+            android:exported="false" />
 
+        <meta-data
+            android:name="version"
+            android:value="1" />
+
+        <service
+            android:name="com.huawei.connection.service.NearFieldManagerService"
+            android:enabled="true"
+            android:exported="false"
+            android:process="com.huawei.connection" />
     </application>
-
-    <uses-permission android:name="com.huawei.permission.HISIGHT_ACCESS" />
-
-<!--    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
-
-<!--    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-
-
-    <!--允许程序访问网络连接-->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!--允许程序获取当前WiFi接入的状态以及WLAN热点的信息-->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

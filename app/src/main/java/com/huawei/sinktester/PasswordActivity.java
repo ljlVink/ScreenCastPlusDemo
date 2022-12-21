@@ -22,7 +22,7 @@ import android.widget.Toast;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PasswordActivity extends AppCompatActivity implements TextWatcher, View.OnFocusChangeListener {
+public class PasswordActivity extends AppCompatActivity implements TextWatcher {
     private Button mConfirmButton;
     private Button mCancelButton;
     private LinearLayout mPasswordLayout;
@@ -174,17 +174,14 @@ public class PasswordActivity extends AppCompatActivity implements TextWatcher, 
             }
         });
     }
-
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
     }
-
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
 
     }
-
     @Override
     public void afterTextChanged(Editable s) {
         if (s != null && s.toString().length() == 1) {
@@ -209,12 +206,6 @@ public class PasswordActivity extends AppCompatActivity implements TextWatcher, 
             }
         }
     }
-
-    @Override
-    public void onFocusChange(View v, boolean hasFocus) {
-
-    }
-
     private boolean checkPassword(String password) {
         String regEx = "^.{6}$";
         Pattern pattern = Pattern.compile(regEx);

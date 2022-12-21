@@ -53,11 +53,11 @@
 
 
     <android.support.constraint.Guideline
-        app:layout_constraintGuide_percent="0.33"
         android:id="@+id/ver_line1"
-        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
 
     <android.support.constraint.Guideline
         app:layout_constraintGuide_percent="0.66"
@@ -86,8 +86,6 @@
          android:id="@+id/main_switch_layout"
          android:layout_width="0dp"
          android:clickable="true"
-         android:focusable="true"
-         android:focusableInTouchMode="true"
          android:background="@drawable/select_background"
          android:layout_height="wrap_content"
          app:layout_constraintStart_toStartOf="@+id/ver_line3"
@@ -100,9 +98,7 @@
         android:id="@+id/encryption_switch_layout"
         android:layout_width="0dp"
         android:clickable="true"
-        android:focusable="true"
         android:layout_marginTop="10dp"
-        android:focusableInTouchMode="true"
         android:background="@drawable/select_background"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@+id/ver_line3"
@@ -111,19 +107,45 @@
 
     <com.huawei.sinktester.SwitchLayout
         app:mode="pwd"
-        app:mytext="@string/password"
-        android:id="@+id/password_layout"
+        app:mytext="@string/fps"
+        android:id="@+id/fps_layout"
         android:layout_width="0dp"
         android:clickable="true"
-        android:focusable="true"
         android:layout_marginTop="10dp"
-        android:focusableInTouchMode="true"
         android:background="@drawable/select_background"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/encryption_switch_layout"
         app:layout_constraintStart_toStartOf="@+id/ver_line3"
         app:layout_constraintEnd_toEndOf="@id/ver_line1"/>
 
+
+    <com.huawei.sinktester.SwitchLayout
+        app:mode="pwd"
+        app:mytext="@string/rotate"
+        android:id="@+id/rotate_layout"
+        android:layout_width="0dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/select_background"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fps_layout"
+        app:layout_constraintStart_toStartOf="@+id/ver_line3"
+        app:layout_constraintEnd_toEndOf="@id/ver_line1"/>
+
+
+
+    <com.huawei.sinktester.SwitchLayout
+        app:mode="pwd"
+        app:mytext="@string/password"
+        android:id="@+id/password_layout"
+        android:layout_width="0dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/select_background"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rotate_layout"
+        app:layout_constraintStart_toStartOf="@+id/ver_line3"
+        app:layout_constraintEnd_toEndOf="@id/ver_line1"/>
 
 
     <TextView
@@ -167,69 +189,8 @@
         app:layout_constraintEnd_toEndOf="@id/ver_line2"
         android:text="@string/step1_description"/>
 
-    <TextView
-        app:layout_constraintStart_toStartOf="@+id/ver_line1"
-        app:layout_constraintEnd_toEndOf="@id/ver_line2"
-        app:layout_constraintBottom_toTopOf="@+id/text_des_step1"
-        android:id="@+id/text_step1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:text="Step1"/>
-
-    <TextView
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:id="@+id/text_des_step2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="14sp"
-        android:maxLines="3"
-        android:gravity="center"
-        android:textColor="@color/colorTextColorWhite"
-        app:layout_constraintStart_toStartOf="@id/ver_line2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/hor_line2"
-        android:text="@string/step2_description"/>
-
-    <TextView
-        android:id="@+id/text_step2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="20sp"
-        android:gravity="center"
-        app:layout_constraintBaseline_toBaselineOf="@id/text_step1"
-        app:layout_constraintStart_toStartOf="@id/ver_line2"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Step2"/>
 
 
-    <ImageView
-        android:id="@+id/img_step1"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/text_step1"
-        app:layout_constraintTop_toBottomOf="@+id/introduct_textview"
-        app:layout_constraintStart_toStartOf="@+id/ver_line1"
-        app:layout_constraintEnd_toEndOf="@+id/ver_line2"
-        android:src="@drawable/cast_picture1"/>
-
-    <ImageView
-        android:id="@+id/img_step2"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@+id/img_step1"
-        app:layout_constraintBottom_toBottomOf="@+id/img_step1"
-        app:layout_constraintStart_toStartOf="@+id/ver_line2"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/cast_picture2"/>
 
 
 </android.support.constraint.ConstraintLayout>

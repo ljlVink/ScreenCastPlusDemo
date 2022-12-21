@@ -6,6 +6,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Point;
 import android.os.Binder;
 import android.os.Handler;
 import android.os.IBinder;
@@ -14,6 +15,9 @@ import android.os.Message;
 import android.util.Log;
 import android.util.Size;
 import android.view.Surface;
+import android.view.WindowManager;
+import android.widget.Toast;
+
 import com.huawei.castpluskit.AuthInfo;
 import com.huawei.castpluskit.ConnectRequestChoice;
 import com.huawei.castpluskit.Constant;
@@ -83,10 +87,6 @@ public class SinkTesterService extends Service {
     private PlayerClient mPlayerClient;
     private CallbackHandler mCallbackHandler;
     private boolean mCastServiceReady = false;
-
-    private int mVideoWidth = 1920;
-    private int mVideoHeight = 1080;
-
     /**
      * cast+ SDK 消息上报
      * message reporting
@@ -359,6 +359,7 @@ public class SinkTesterService extends Service {
         //}
 
         if ((mode & OPTIMIZATION_TAG_MEDIA_FORMAT_INTEGER) != 0) {
+            capability.setIsSupportRemoteCtrl(true);
         }
         if ((mode & OPTIMIZATION_TAG_MEDIA_FORMAT_FLOAT) != 0) {
         }
@@ -398,11 +399,17 @@ public class SinkTesterService extends Service {
             DisplayInfo displayInfo;
             switch (msg.what) {
                 case Constant.EVENT_ID_SERVICE_BIND_SUCCESS: //4001
-                    int framerate = 30;
+                    int framerate = SharedPreferenceUtil.getFps(mContext);
                     int optimizationMode = 1;
-                    setCapability(1920, 1080, framerate, optimizationMode);
+                    int width=SharedPreferenceUtil.getWidth(mContext);
+                    int height=SharedPreferenceUtil.getHeight(mContext);
+                    boolean rotation=SharedPreferenceUtil.getRotation(mContext);
+                    if (!rotation){
+                        setCapability(height, width, framerate, optimizationMode);
+                    }else{
+                        setCapability(width, height, framerate, optimizationMode);
+                    }
                     setDiscoverable(mIsDiscoverable);
-
                     boolean needPassword = SharedPreferenceUtil.getAuthMode(mContext);
                     String password = SharedPreferenceUtil.getPassword(mContext);
                     boolean isNewPassword = false;
